@@ -1,0 +1,45 @@
+/* ModalComponent.css */
+
+.modal-container {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+  }
+  
+  .modal-title {
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  .modal-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  
+  .modal-quadrant {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    height: 90%;
+    margin-bottom: 20px; /* Added margin-bottom */
+  }
+  
+  .modal-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-button:hover {
+    background-color: #45a049;
+  }
+  

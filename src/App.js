@@ -3,10 +3,11 @@ import './App.css';
 import OpenAI from "openai";
 import { AIConnect } from './openai-test.js'; 
 import { useEffect } from 'react';
+import TableComponent from './Components/table.jsx';
 // import * as fs from 'fs';
 
 const openai = new OpenAI(
-  {apiKey: 'UPDATE THIS',
+  {apiKey: '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',
 dangerouslyAllowBrowser: true}
 );
 // fs.readfile('message.txt', 'utf8', function(err,data) {
@@ -19,25 +20,25 @@ dangerouslyAllowBrowser: true}
 //   }
 //   console.log('message output',obj);
 // });
-const response = AIConnect(openai, 'what are the top ten ranked movies');
+const response = AIConnect(openai, 'come up with a winter/christmas themed app name for an app that summarizes zoom transcripts');
+
+  // Sample data
+  const data = [
+    {
+      title: 'React Table Example',
+      shortDescription: 'A simple example of using react-table',
+      description: 'This is a longer description for the React Table example.',
+      tags: 'React, Table, Example',
+      dates: ['2023-01-01', '2023-01-11'],
+    },
+    // Add more data objects as needed
+  ];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Table Component Example</h1>
+      <TableComponent data={data} />
     </div>
   );
 }

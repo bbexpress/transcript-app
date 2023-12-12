@@ -1,0 +1,29 @@
+/* TableComponent.css */
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-header {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .table-cell {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table-cell-header {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid white;
+  }
+  

@@ -1,29 +1,25 @@
-/* TableComponent.css */
-
+/* table.css or in your component style tag */
 .table-container {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .table-header {
-    background: #4CAF50;
-    color: white;
-  }
-  
-  .table-row {
-    border-bottom: 1px solid #ddd;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  .table-cell {
-    padding: 12px;
-    text-align: left;
-  }
-  
-  .table-cell-header {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 2px solid white;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #007500; /* Green background for the header */
+  color: white;
+}
+
+.table-row:nth-child(even) {
+  background-color: #fff; /* White background for even rows */
+  color: #b91515;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #b91515; /* Red background for odd rows */
+  color: white;
+}
+
+.table-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+}

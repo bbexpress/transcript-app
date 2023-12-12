@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  background-color: #007500; /* Green background for the header */
+  /* color: white; */
+  position: relative;
+  color: white
+}
+.table-header {
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5); /* Blurred white background with transparency */
+  z-index: -1;
+}
+
+
+.app-background {
+  background-image: url('../public/HT-1892.webp');
+  background-size: cover;
+  height: 100vh;
+  /* Add more styles as needed */
+}
